@@ -51,46 +51,7 @@ public class removeDuplicateNode {
 		}
 		
 	}
-	/* Alternative Solution tested on LeetCode 
-	* 
-	/**
-	 * Definition for singly-linked list.
-	  * public class ListNode {
-	  	 *     int val;
-	  	  *     ListNode next;
-	  	   *     ListNode(int x) {
-	  	   	 *         val = x;
-	  	   	  *         next = null;
-	  	   	   *     }
-	  	   	    * }
-	  	   	     */
-	  	   	   public class Solution {
-	  	   	     	    public ListNode deleteDuplicates(ListNode head) {
-	  	   	     	    	        // Start typing your Java solution below
-	  	   	     	    	                // DO NOT write main() function
-	  	   	     	    	                        HashSet<Integer> set = new HashSet<Integer>() ;
-	  	   	     	    	                                ListNode prev  = null ;
-	  	   	     	    	                                        ListNode current = head ;
-	  	   	     	    	                                                while(current!=null)
-	  	   	     	    	                                                        {
-	  	   	     	    	                                                        	            ListNode next = current.next ;
-	  	   	     	    	                                                        	                        if(!set.contains(current.val))
-	  	   	     	    	                                                        	                                        {
-	  	   	     	    	                                                        	                                        	                    set.add(current.val);
-	  	   	     	    	                                                        	                                        	                                        prev = current ;
-	  	   	     	    	                                                        	                                        	                                                            current = next ;
-	  	   	     	    	                                                        	                                        }
-	  	   	     	    	                                                        	                                                    else
-	  	   	     	    	                                                        	                                                                    {
-	  	   	     	    	                                                        	                                                                    	                    prev.next = next ;
-	  	   	     	    	                                                        	                                                                    	                                        current = next ;
-	  	   	     	    	                                                        	                                                                    }
-	  	   	     	    	                                                        	                                                                                   //current = current.next ;
-	  	   	     	    	                                                        } 
-	  	   	     	    	                                                                return head ;
-	  	   	     	    }
-	  	   	     }
-	*/
+
 	public static void main (String[] args)
 	{
 		LinkedListNode node = method.randomLinkedList(10, 0, 10);
